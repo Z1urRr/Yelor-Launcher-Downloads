@@ -1,0 +1,74 @@
+name: 下载或安装问题
+description: 报告 Release 下载、校验、安装或首次启动问题
+title: "[Download] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请只从本仓库 Release 下载，并先校验 SHA-256。提交截图或日志前请删除账号、邮箱、Token、验证码和完整本机路径。
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台
+      options:
+        - Windows 11 x64
+        - Windows 10 x64
+        - macOS Apple Silicon
+        - 其他
+    validations:
+      required: true
+  - type: dropdown
+    id: artifact
+    attributes:
+      label: 下载文件
+      options:
+        - Yelor-Launcher-0.1.4.exe
+        - Yelor-Launcher-0.1.4-macos-arm64.dmg
+        - Yelor-Launcher-0.1.4-macos-arm64.app.zip
+        - Yelor-Launcher-0.1.4-macos-arm64.app.tar.gz
+        - 其他
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: 出现问题的阶段
+      options:
+        - GitHub 下载
+        - SHA-256 校验
+        - 安装或解压
+        - 第一次启动
+        - 创建游戏目录
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 说明实际结果、预期结果和系统提示。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 从 Release 下载……
+        2. 校验 SHA-256……
+        3. 打开……
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我下载的是本仓库 Release 中的文件。
+          required: true
+        - label: 我已核对 SHA-256，并会在描述中说明是否一致。
+          required: true
+        - label: 我已删除日志和截图中的凭据及个人信息。
+          required: true

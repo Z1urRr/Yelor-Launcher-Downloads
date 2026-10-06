@@ -10,6 +10,7 @@
   <br><br>
   <a href="https://github.com/Z1urRr/Yelor-Launcher-Downloads/releases/tag/v0.1.4-public-preview"><img alt="Latest public preview" src="https://img.shields.io/github/v/release/Z1urRr/Yelor-Launcher-Downloads?display_name=tag&include_prereleases&style=flat-square&color=56d8ee&label=PREVIEW"></a>
   <a href="https://github.com/Z1urRr/Yelor-Launcher-Downloads/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Z1urRr/Yelor-Launcher-Downloads/total?style=flat-square&color=b9eb3c&label=DOWNLOADS"></a>
+  <a href="https://github.com/Z1urRr/Yelor-Launcher-Downloads/actions/workflows/verify-public-release.yml"><img alt="Release metadata verification" src="https://github.com/Z1urRr/Yelor-Launcher-Downloads/actions/workflows/verify-public-release.yml/badge.svg?branch=main"></a>
   <img alt="Windows x64" src="https://img.shields.io/badge/WINDOWS-X64-eef0e9?style=flat-square&labelColor=080a0a">
   <img alt="macOS Apple Silicon" src="https://img.shields.io/badge/macOS-APPLE%20SILICON-eef0e9?style=flat-square&labelColor=080a0a">
 </div>
@@ -57,6 +58,24 @@ C64FD77B5E4F6C1C400BA04974D1A04A53EC279F02E549A13D4E005C2EADF4B9  Yelor-Launcher
 
 完整清单见 [`SHA256SUMS.txt`](SHA256SUMS.txt)。
 
+## 校验下载
+
+下载完成后，建议先确认文件的 SHA-256 与本页一致。仓库提供 Windows PowerShell 和 macOS/Linux 两种校验脚本：
+
+```powershell
+.\tools\verify-release.ps1 `
+  -File ".\Yelor-Launcher-0.1.4.exe" `
+  -ExpectedSha256 "69092AB7C3D198B076F4A411603E337487C7CAE189D1BE4CDDF7959C593E41C9"
+```
+
+```sh
+./tools/verify-release.sh \
+  ./Yelor-Launcher-0.1.4-macos-arm64.dmg \
+  2AC7E2ADC22F773E77DF22F7809F44C6C43D0CE15592D14FA0C50ABDFD6F7C55
+```
+
+完整步骤见 [`docs/VERIFY_DOWNLOAD.md`](docs/VERIFY_DOWNLOAD.md)。
+
 ## 安装
 
 ### Windows
@@ -72,6 +91,16 @@ C64FD77B5E4F6C1C400BA04974D1A04A53EC279F02E549A13D4E005C2EADF4B9  Yelor-Launcher
 2. 打开镜像后将 Yelor Launcher 拖入“应用程序”。
 3. 当前公测包的 Apple 签名与公证状态尚未在本仓库完成独立验收；遇到系统安全提示时不要关闭系统安全保护，请等待后续正式签名版本。
 
+## 使用帮助
+
+| 文档 | 内容 |
+|:--|:--|
+| [`docs/INSTALLATION.md`](docs/INSTALLATION.md) | Windows 与 macOS 安装步骤 |
+| [`docs/VERIFY_DOWNLOAD.md`](docs/VERIFY_DOWNLOAD.md) | SHA-256 校验方法 |
+| [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md) | 目录、Java、下载与系统提示排查 |
+| [`RELEASE_NOTES_0.1.4.md`](RELEASE_NOTES_0.1.4.md) | `0.1.4` 完整公开说明 |
+| [`SUPPORT.md`](SUPPORT.md) | 反馈范围与隐私注意事项 |
+
 ## 这次更新
 
 - Minecraft 客户端核心下载显示真实字节进度与下载速度。
@@ -80,6 +109,13 @@ C64FD77B5E4F6C1C400BA04974D1A04A53EC279F02E549A13D4E005C2EADF4B9  Yelor-Launcher
 - Java 自动选择采用版本和 Loader 兼容范围，不再简单选择最高版本。
 - 修复 Steve / Alex 默认皮肤、皮肤页面流畅度、主题色状态和 Java 长路径显示。
 - 收藏图标只表示收藏，不再与当前启动实例混淆。
+
+## 当前限制
+
+- Windows 公测 EXE 未签署 Authenticode，系统可能显示未知发布者。
+- macOS 公测包的 Apple 签名与公证状态尚未在本仓库独立确认。
+- `.app.tar.gz` 没有公开 updater `.sig`，不能用于正式自动更新。
+- 本次公开预览不代表生产账号、在线更新与跨平台联调已经全部完成。
 
 ## 开放内容范围
 

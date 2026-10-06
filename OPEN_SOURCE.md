@@ -6,9 +6,9 @@ Yelor Launcher 采用“发行资料与通用工具开放、核心产品代码�
 
 - 玩家可下载的公开预览制品。
 - SHA-256 校验清单和机器可读发布清单。
-- 不包含 Yelor 业务逻辑的通用文件校验脚本。
+- 不包含 Yelor 业务逻辑的通用文件校验脚本和发布元数据检查工具。
 - 安装、排错和公开版本说明。
-- GitHub Issue 模板。
+- GitHub Issue 模板与公开发布元数据 CI。
 
 `tools/` 下的通用校验脚本使用 MIT License，详见 [`tools/LICENSE`](tools/LICENSE)。文档允许在保留来源的情况下引用。
 
