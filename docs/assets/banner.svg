@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="420" viewBox="0 0 1440 420" role="img" aria-labelledby="title desc">
+  <title id="title">Yelor Launcher public downloads</title>
+  <desc id="desc">A dark editorial banner for the Yelor Launcher GitHub download repository.</desc>
+  <rect width="1440" height="420" fill="#080a0a"/>
+  <path d="M0 56H1440M0 364H1440" stroke="#eef0e9" stroke-opacity=".22"/>
+  <path d="M82 0V420M1358 0V420" stroke="#eef0e9" stroke-opacity=".12"/>
+  <path d="M1026 56V364" stroke="#56d8ee" stroke-opacity=".52"/>
+  <rect x="1026" y="56" width="332" height="308" fill="#101414"/>
+  <rect x="1062" y="91" width="16" height="16" fill="#b9eb3c"/>
+  <text x="1094" y="104" fill="#eef0e9" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="2">PUBLIC PREVIEW</text>
+  <text x="1062" y="188" fill="#eef0e9" font-family="Arial, Helvetica, sans-serif" font-size="65" font-weight="700">0.1.4</text>
+  <text x="1062" y="225" fill="#8f9998" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="2">WINDOWS X64</text>
+  <text x="1062" y="252" fill="#8f9998" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="2">macOS ARM64</text>
+  <path d="M1062 314H1288" stroke="#eef0e9" stroke-opacity=".28"/>
+  <path d="M1270 300L1288 314L1270 328" fill="none" stroke="#56d8ee" stroke-width="2"/>
+  <text x="82" y="103" fill="#56d8ee" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="3">YELOR STUDIO / RELEASE CHANNEL</text>
+  <text x="76" y="244" fill="#eef0e9" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="800">YELOR</text>
+  <text x="82" y="302" fill="#eef0e9" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" letter-spacing="7">LAUNCHER</text>
+  <text x="82" y="344" fill="#8f9998" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="2">DOWNLOADS · CHECKSUMS · RELEASE NOTES</text>
+</svg>

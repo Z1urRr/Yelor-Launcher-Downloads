@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 下载最新版本
+    url: https://github.com/Z1urRr/Yelor-Launcher-Downloads/releases
+    about: 前往官方 GitHub Release 页面
+  - name: 安全问题
+    url: https://github.com/Z1urRr/Yelor-Launcher-Downloads/security
+    about: 不要在公开 Issue 中提交凭据或可利用漏洞细节

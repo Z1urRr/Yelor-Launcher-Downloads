@@ -1,0 +1,40 @@
+{
+  "product": "Yelor Launcher",
+  "version": "0.1.4",
+  "channel": "public-preview",
+  "published_at": "2026-10-06",
+  "artifacts": [
+    {
+      "filename": "Yelor-Launcher-0.1.4.exe",
+      "platform": "windows",
+      "arch": "x86_64",
+      "size": 9226752,
+      "sha256": "69092AB7C3D198B076F4A411603E337487C7CAE189D1BE4CDDF7959C593E41C9",
+      "signature_status": "unsigned-authenticode"
+    },
+    {
+      "filename": "Yelor-Launcher-0.1.4-macos-arm64.dmg",
+      "platform": "darwin",
+      "arch": "aarch64",
+      "size": 5615112,
+      "sha256": "2AC7E2ADC22F773E77DF22F7809F44C6C43D0CE15592D14FA0C50ABDFD6F7C55",
+      "signature_status": "unverified"
+    },
+    {
+      "filename": "Yelor-Launcher-0.1.4-macos-arm64.app.zip",
+      "platform": "darwin",
+      "arch": "aarch64",
+      "size": 5602790,
+      "sha256": "40CE1A71DCA6513F2062A2BB171D8C37CE8A209EEF83A56F89DBDB4D25C9F34C",
+      "signature_status": "unverified"
+    },
+    {
+      "filename": "Yelor-Launcher-0.1.4-macos-arm64.app.tar.gz",
+      "platform": "darwin",
+      "arch": "aarch64",
+      "size": 5602238,
+      "sha256": "C64FD77B5E4F6C1C400BA04974D1A04A53EC279F02E549A13D4E005C2EADF4B9",
+      "signature_status": "missing-updater-signature"
+    }
+  ]
+}
