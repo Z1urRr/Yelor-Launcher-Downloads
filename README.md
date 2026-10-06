@@ -8,7 +8,7 @@
   <br><br>
   <strong>Yelor Launcher 公共下载与发行信息</strong>
   <br><br>
-  <a href="https://github.com/Z1urRr/Yelor-Launcher-Downloads/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Z1urRr/Yelor-Launcher-Downloads?display_name=tag&include_prereleases&style=flat-square&color=56d8ee&label=RELEASE"></a>
+  <a href="https://github.com/Z1urRr/Yelor-Launcher-Downloads/releases/tag/v0.1.4-public-preview"><img alt="Latest public preview" src="https://img.shields.io/github/v/release/Z1urRr/Yelor-Launcher-Downloads?display_name=tag&include_prereleases&style=flat-square&color=56d8ee&label=PREVIEW"></a>
   <a href="https://github.com/Z1urRr/Yelor-Launcher-Downloads/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Z1urRr/Yelor-Launcher-Downloads/total?style=flat-square&color=b9eb3c&label=DOWNLOADS"></a>
   <img alt="Windows x64" src="https://img.shields.io/badge/WINDOWS-X64-eef0e9?style=flat-square&labelColor=080a0a">
   <img alt="macOS Apple Silicon" src="https://img.shields.io/badge/macOS-APPLE%20SILICON-eef0e9?style=flat-square&labelColor=080a0a">
